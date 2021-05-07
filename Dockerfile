@@ -1,6 +1,7 @@
 FROM httpd:latest
-LABEL MAINTAINER=konrad.schieban@gmail.com
+LABEL MAINTAINER=mmartinez@edustance.com
 
-COPY . /usr/local/apache2/htdocs/.
+#COPY . /usr/local/apache2/htdocs/.
+COPY . /var/www/html/.
 
-EXPOSE 80
+EXPOSE 8080
